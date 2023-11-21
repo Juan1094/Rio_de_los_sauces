@@ -63,7 +63,7 @@ header .nav-bar:hover{
     margin: auto;
     text-align: center;
     padding: 15% 0;
-    background: url(/imagenfondo.jpg);
+    background: url(imagenfondo.jpg);
     background-size: cover;
     background-position: center;
 }
