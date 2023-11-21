@@ -10,6 +10,48 @@ body {
     color: #333;
     font-family: Arial, sans-serif;
 }
+header{
+    background-size: cover;
+    background-position: center;
+    color:white;
+    margin: auto;
+    text-align: center;
+    padding: 0%;
+}
+
+header nav{
+    position: fixed;
+    margin-left: 60px;
+    background-color: black;
+    padding: 15px;
+    border-radius: 10px;
+    text-align: left;
+    z-index: 99;
+    display: none;
+}
+
+header nav a{
+    display: block;
+    color: #fff;
+    text-decoration: none;
+    margin-bottom: 10px;
+    font-weight: bold;
+}
+
+header .nav-bar{
+    position: fixed;
+    background-color: black;
+    font-size: 20px;
+    width: 50px;
+    height: 50px;
+    border-radius: 50px;
+    line-height: 50px;
+    cursor: pointer;
+    transition: .3s;
+}
+header .nav-bar:hover{
+    box-shadow: 0 0 35px #fff;
+}
 
 .inicio{
     background-size: cover;
@@ -21,48 +63,11 @@ body {
     margin: auto;
     text-align: center;
     padding: 15% 0;
-    background: url(/rio.png);
+    background: url(/imagenfondo.jpg);
     background-size: cover;
     background-position: center;
 }
 
-.inicio .contenido-seccion header{
-    padding: 30px;
-}
-
-.inicio .contenido-seccion header nav{
-    position: fixed;
-    margin-left: 60px;
-    background-color: black;
-    padding: 15px;
-    border-radius: 10px;
-    text-align: left;
-    z-index: 99;
-    display: none;
-}
-
-.inicio .contenido-seccion header nav a{
-    display: block;
-    color: #fff;
-    text-decoration: none;
-    margin-bottom: 10px;
-    font-weight: bold;
-}
-
-.inicio .contenido-seccion header .nav-bar{
-    position: fixed;
-    background-color: black;
-    font-size: 20px;
-    width: 50px;
-    height: 50px;
-    border-radius: 50px;
-    line-height: 50px;
-    cursor: pointer;
-    transition: .3s;
-}
-.inicio .contenido-seccion header .nav-bar:hover{
-    box-shadow: 0 0 35px #fff;
-}
 
 .inicio .contenido-seccion h1{
     font-size: 3rem;
@@ -86,6 +91,10 @@ body {
     text-align:center;
 }
 
+.lugares {
+    background-color: #e6e6e6;
+}
+
 
 .acerca_de .contenido-seccion p{
     width:100%;
@@ -93,25 +102,84 @@ body {
     color: #666;
 }
 
-.lugares {
+.places-container {
     display: flex;
+    flex-wrap: wrap;
     justify-content: space-around;
-    margin-bottom: 300px;
+}
+
+.lugares .overlay p{
+    width:100%;
+    margin: auto;
+}
+
+.place {
+    width: 30%;
+    margin: 10px;
+    position: relative;
+    overflow: hidden;
+}
+.lugares h2{
+    padding: 20px;
+    text-align: center;
+    font-family: "Yellowtail";
+    font-size: 1.5ram;
+}
+
+.place:hover .overlay {
+    opacity: 1;
 }
 
 
-.lugar {
-    flex: 0 0 30%;
-    text-align: center;
+.overlay {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background: rgba(0, 0, 0, 0.7);
+    color: #fff;
+    opacity: 0;
+    transition: opacity 0.5s;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+
+.hospedaje {
+    background-color: #e6e6e6;
+}
+
+.hospedaje h2{
     padding: 20px;
+    text-align: center;
+    font-family: "Yellowtail";
+    font-size: 1.5ram;
+}
+
+.accommodations-container {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-around;
+}
+
+.accommodation {
+    width: 45%;
+    margin: 10px;
+    padding: 10px;
     background-color: #fff;
-    border-radius: 10px;
     box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
 }
 
-.lugar img {
+
+@media only screen and (max-width: 768px) {
+    .places-container, .accommodations-container {
+        flex-direction: column;
+    }
+    .place, .accommodation {
     width: 100%;
-    border-radius: 5px;
+    }
 }
 
 
