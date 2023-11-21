@@ -1,0 +1,111 @@
+<!DOCTYPE html>
+<html lang="es">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="estilo.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.3.0/css/all.min.css" integrity="sha512-SzlrxWUlpfuzQ+pcUCosxcglQRNAq/DZjVsC0lE40xsADsfeQoEypE+enwcOiGjk/bSuGGKHEyjSoQ1zVisanQ==" crossorigin="anonymous" referrerpolicy="no-referrer" />
+    <title>Río de los Sauces</title>
+</head>
+
+<body>
+    <header>
+        <div class="nav-bar" onclick="mostrarOcultarMenu()">
+            <i class="fa-solid fa-bars"></i>
+        </div>
+        <nav id="nav" class="nav">
+            <a href="#inicio">Inicio</a>
+            <a href="#acerca_de">Acerca de</a>
+            <a href="#lugares">Lugares a visitar</a>
+            <a href="#hospedaje">Hospedaje</a>
+        </nav>
+    </header>
+    <section class="inicio" id="inicio">
+        <div class="contenido-seccion">
+            <h1>Río de los Sauces</h1>
+            <h2>Un lugar para vacacionar</h2>
+        </div>
+    </section>
+    <section class="acerca_de" id="acerca_de">
+        <div class="contenido-seccion">
+            <h2 class="titulo-seccion">ACERCA DE</h2>
+            <p>Río de los Sauces es una de las localidades más antiguas del Valle de Calamuchita. Con el río homónimo como principal atractivo, este rincón cordobés posee un clima templado ideal para disfrutar durante todo el año. Lleno de historia y tradición, este poblado era conocido como “Li-Sien” por los primeros pobladores de la zona, que significa “entre árboles”, una característica que aún conserva. Alrededor de las aguas cristalinas de su río pueden encontrarse morteros y puntas de flecha, vestigios de la cultura comechingona.</p>
+            <p>Ubicación del lugar: <a href="https://maps.app.goo.gl/HxWA1QGKXb88QeDZ6">Ver en Google Maps</a></p>
+        </div>
+    </section>
+    <section class="lugares" id="lugares">
+        <h2>LUGARES A VISITAR</h2>
+        <div class="places-container">
+            <div class="place" onmouseover="showInfo(this)" onmouseout="hideInfo(this)">
+                <img src="https://lh5.googleusercontent.com/p/AF1QipMKtBUTxud2xfdisAGIvzD8uJxT8cfLIV-qwFD6=w540-h312-n-k-no" alt="Paseo Cultural">
+                <div class="overlay">
+                    <h2>Paseo Cultural de Río de los Sauces</h2>
+                    <p>Río de los Sauces es uno de los pueblos más antiguos del Valle de Calamuchita. 
+                        Conocerlo y descubrirlo significa caminar por las callecitas de una localidad con más de 380 años. 
+                        Por sus rincones, aparece una pintoresca posta religiosa, la capilla de Nuestro Señor de la Buena Muerte, reconstruida en 1882. A su alrededor se asientan antiguas casas y ranchos que dan la impresión de estar en otra época.</p>
+                 </div>
+            </div>
+            <div class="place" onmouseover="showInfo(this)" onmouseout="hideInfo(this)">
+                <img src="https://lh5.googleusercontent.com/p/AF1QipMHhyFccuCGcz5muisyJyo2Zu_TvxjXDK2Lyj6F=w408-h306-k-no" alt="Río Coufre">
+                <div class="overlay">
+                    <h2>Río Coufre</h2>
+                    <p>El río cufre es un lugar muy turístico de río de los sauces se encuentra a 5 minutos del pueblo donde se pueden encontrar dos lugares muy lindos para refrescarse que son "la curva" y "los cajones".</p>
+                    <p>Ubicación: <a href="https://maps.app.goo.gl/AvEkbBvkedhdnfoA8" target="_blank">Ver en Google Maps</a></p>
+                </div>
+            </div>
+            <div class="place" onmouseover="showInfo(this)" onmouseout="hideInfo(this)">
+                <img src="imagen2.jpg" alt="Festival de Doma y Folklore">
+                <div class="overlay">
+                    <h2>Festival de Doma y Folklore</h2>
+                    <p>En el verano de rio de lo sauces se realiza el festival de doma y folklore que trae mucha gente y artistas tanto a nivel local como nacional.</p>
+                </div>
+            </div>
+        </div>
+    </section>
+    <section class="hospedaje" id="hospedaje">
+        <h2>HOSPEDAJE</h2>
+        <div class="accommodations-container">
+            <div class="accommodation">
+                <h3>CABAÑAS EL HORREO</h3>
+                <img src="elhorreo.jpg" alt="Cabañas El horrero">
+                <p>Cabañas El Horreo son dos cabañas para 5 personas, se encuentran a 10 cuadras del rio.
+                    La cabaña cuenta con dos habitaciones, baño, cocina, living, wifi, asador y cochera.
+                </p>
+                <p>Ver en Google Maps: <a href="https://maps.app.goo.gl/uUAKDvHXXFvuqVob7" target="_blank"><i class="fa-solid fa-location-dot" style="color: #f50000;"></i></a></p>
+                <p>Contactanos: <a href="https://wa.me/3585097020" target="_blank"><i class="fa-brands fa-whatsapp" style="color: #0ab607;"></i></a></p>
+            </div>
+            <div class="accommodation">
+                <h3>CABAÑAS AGUA DULCE</h3>
+                <img src="aguadulce.jpg" alt="Cabañas Agua Dulce">
+                <p>Cabañas Agua dulce cuenta con tres cabañas para 4 personas, se encuentra a 3 cuadras 
+                    del rió. La cabaña cuenta con una habitación, baño, cocina, living, cochera, asador y wifi.</p>
+                <p>Ver en Google Maps: <a href="https://maps.app.goo.gl/uzJoymLfiJp7SEjV8" target="_blank"><i class="fa-solid fa-location-dot" style="color: #f50000;"></i></a></p>
+                <p>Contactanos: <a href="https://wa.me/3571555199" target="_blank"><i class="fa-brands fa-whatsapp" style="color: #0ab607;"></i></a></p>
+            </div>
+            <div class="accommodation">
+                <h3>CABAÑAS LA QUECHA</h3>
+                <img src="laquecha.jpg" alt="Cabañas La Quecha">
+                <p>Cabañas La Quecha cuenta con tres cabañas para 2, 3 o 4 personas. La cabaña cuenta con 
+                    hanitacion con cama matrimonial, baño, mesa, silla, elementos de cocina, wifi, aire acodincionado,
+                    horno y anafe, tender de ropa, ropa blanca, cochera, asador.
+                </p>
+                <p>Ver en Google Maps: <a href="https://maps.app.goo.gl/DVc7Apuvx1rP67HNA" target="_blank"><i class="fa-solid fa-location-dot" style="color: #f50000;"></i></a></p>
+                <p>Contactanos: <a href="https://wa.me/3468529933" target="_blank"><i class="fa-brands fa-whatsapp" style="color: #0ab607;"></i></a></p>
+            </div>
+            <div class="accommodation">
+                <h3>CABAÑAS SOL Y LUNA</h3>
+                <img src="solyluna.jpg" alt="Cabañas Sol y Luna">
+                <p>Las cabañas Sol y Luna son dos cabañas para 6 personas. La cabaña cuenta con cocina, heladera, aire acondicionado,
+                     calefaccion, wifi, piscina climatizada, cochera, asador.
+                </p>
+                <p>Ver en Google Maps: <a href="https://maps.app.goo.gl/woJKdjot5552vCtG8" target="_blank"><i class="fa-solid fa-location-dot" style="color: #f50000;"></i></a></p>
+                <p>Contactanos: <a href="https://wa.me/3586012693" target="_blank"><i class="fa-brands fa-whatsapp" style="color: #0ab607;"></i></a></p>
+            </div>
+
+        </div>
+    </section>
+    <script src="app.js"></script>
+</body>
+
+</html>
