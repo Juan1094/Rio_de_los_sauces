@@ -10,21 +10,21 @@
 </head>
 
 <body>
+    <header>
+        <div class="nav-bar" onclick="mostrarOcultarMenu()">
+            <i class="fa-solid fa-bars"></i>
+        </div>
+        <nav id="nav" class="nav">
+            <a href="#inicio">Inicio</a>
+            <a href="#acerca_de">Acerca de</a>
+            <a href="#lugares">Lugares a visitar</a>
+            <a href="#hospedaje">Hospedaje</a>
+        </nav>
+    </header>
     <section class="inicio" id="inicio">
         <div class="contenido-seccion">
-            <header>
-                <div class="nav-bar" onclick="mostrarOcultarMenu()">
-                    <i class="fa-solid fa-bars"></i>
-                </div>
-                <nav id="nav" class="nav">
-                    <a href="#inicio">Inicio</a>
-                    <a href="#acerca_de">Acerca de</a>
-                    <a href="#lugares">Lugares a visitar</a>
-                    <a href="#hospedaje">Hospedaje</a>
-                </nav>
-                <h1>Río de los Sauces</h1>
-                <h2>Un lugar para vacacionar</h2>
-            </header>
+            <h1>Río de los Sauces</h1>
+            <h2>Un lugar para vacacionar</h2>
         </div>
     </section>
     <section class="acerca_de" id="acerca_de">
@@ -35,18 +35,65 @@
         </div>
     </section>
     <section class="lugares" id="lugares">
-        <div class="lugar">
-            <h3>Paseo Cultural de Río de los Sauces</h3>
-            <img src="https://lh5.googleusercontent.com/p/AF1QipMKtBUTxud2xfdisAGIvzD8uJxT8cfLIV-qwFD6=w540-h312-n-k-no" alt="Paseo Cultural">
+        <h2>LUGARES A VISITAR</h2>
+        <div class="places-container">
+            <div class="place" onmouseover="showInfo(this)" onmouseout="hideInfo(this)">
+                <img src="https://lh5.googleusercontent.com/p/AF1QipMKtBUTxud2xfdisAGIvzD8uJxT8cfLIV-qwFD6=w540-h312-n-k-no" alt="Paseo Cultural">
+                <div class="overlay">
+                    <h2>Paseo Cultural de Río de los Sauces</h2>
+                    <p>Río de los Sauces es uno de los pueblos más antiguos del Valle de Calamuchita. Conocerlo y descubrirlo significa caminar por las callecitas de una localidad con más de 380 años.Por sus rincones, aparece una pintoresca posta religiosa, la capilla de Nuestro Señor de la Buena Muerte, reconstruida en 1882. A su alrededor se asientan antiguas casas y ranchos que dan la impresión de estar en otra época.</p>
+                 </div>
+            </div>
+            <div class="place" onmouseover="showInfo(this)" onmouseout="hideInfo(this)">
+                <img src="https://lh5.googleusercontent.com/p/AF1QipMHhyFccuCGcz5muisyJyo2Zu_TvxjXDK2Lyj6F=w408-h306-k-no" alt="Río Coufre">
+                <div class="overlay">
+                    <h2>Río Coufre</h2>
+                    <p>El río cufre es un lugar muy turístico de río de los sauces se encuentra a 5 minutos del pueblo donde se pueden encontrar dos lugares muy lindos para refrescarse que son "la curva" y "los cajones".</p>
+                    <p>Ubicación: <a href="https://maps.app.goo.gl/AvEkbBvkedhdnfoA8">Ver en Google Maps</a></p>
+                </div>
+            </div>
+            <div class="place" onmouseover="showInfo(this)" onmouseout="hideInfo(this)">
+                <img src="\imagen2.jpg" alt="Festival de Doma y Folklore">
+                <div class="overlay">
+                    <h2>Festival de Doma y Folklore</h2>
+                    <p>En el verano de rio de lo sauces se realiza el festival de doma y folklore que trae mucha gente y artistas tanto a nivel local como nacional.</p>
+                </div>
+            </div>
         </div>
-        <div class="lugar">
-            <h3>Río Coufre</h3>
-            <img src="https://lh5.googleusercontent.com/p/AF1QipMHhyFccuCGcz5muisyJyo2Zu_TvxjXDK2Lyj6F=w408-h306-k-no" alt="Río Cuofre">
-            <p>Ubicación: <a href="https://maps.app.goo.gl/AvEkbBvkedhdnfoA8">Ver en Google Maps</a></p>
-        </div>
-        <div class="lugar">
-            <h3>Festival de Doma y Folclore en Verano</h3>
-            <img src="data:image/jpeg;base64,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" alt="Festival de Doma y Folklore">
+    </section>
+    <section class="hospedaje" id="hospedaje">
+        <h2>HOSPEDAJE</h2>
+        <div class="accommodations-container">
+            <div class="accommodation">
+                <h3>CABAÑAS EL HORREO</h3>
+                <img src="\elhorreo.jpg" alt="El horrero">
+                <p>Cabañas el horreo son dos cabañas para 5 personas, se encuentran a 10 cuadras del rio.
+                    La cabaña cuenta con dos habitaciones, baño, cocina , living , wifi , asador y cochera
+                </p>
+                <p>Ubicación: <a href="https://maps.app.goo.gl/uUAKDvHXXFvuqVob7">Ver en Google Maps</a></p>
+                <a href="https://wa.me/3585097020" target="_blank">Contactar por WhatsApp</a>
+            </div>
+            <div class="accommodation">
+                <h3>CABAÑAS AGUA DULCE</h3>
+                <img src="\aguadulce.jpg" alt="Cabañas Agua Dulce">
+                <p>Cabañas agua dulce cuenta con tres cabañas para 4 personas, se encuentra a 3 cuadras 
+                    del rió. La cabaña cuenta con una habitación, baño, cocina y living, cochera, asador y wifi.</p>
+                <p>Ubicación: <a href="https://maps.app.goo.gl/uzJoymLfiJp7SEjV8">Ver en Google Maps</a></p>
+                <a href="https://wa.me/3571555199" target="_blank">Contactar por WhatsApp</a>
+            </div>
+            <div class="accommodation">
+                <h3>Cabañas Agua Dulce</h3>
+                <img src="cabaña1.jpg" alt="Cabañas Agua Dulce">
+                <p>Cabañas Agua Dulce cuenta con 3 cabañas para 4 personas se encuentra a 3 cuadras del río...</p>
+                <a href="https://wa.me/3468529933" target="_blank">Contactar por WhatsApp</a>
+            </div>
+            <div class="accommodation">
+                <h3>Cabañas Agua Dulce</h3>
+                <img src="cabaña1.jpg" alt="Cabañas Agua Dulce">
+                <p>Cabañas Agua Dulce cuenta con 3 cabañas para 4 personas se encuentra a 3 cuadras del río...</p>
+                <a href="https://wa.me/3586012693" target="_blank">Contactar por WhatsApp</a>
+            </div>
+
         </div>
     </section>
     <script src="app.js"></script>
