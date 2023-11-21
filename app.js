@@ -19,3 +19,11 @@ for(var x = 0; x <links.length;x++){
 
     }
 }
+
+function showInfo(element) {
+    element.querySelector('.overlay').style.opacity = 1;
+}
+
+function hideInfo(element) {
+    element.querySelector('.overlay').style.opacity = 0;
+}
